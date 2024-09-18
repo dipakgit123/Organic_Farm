@@ -1,38 +1,160 @@
-.App {
+/* HOME */
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  overflow: hidden;
+  animation: reveal 2s linear forwards;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box h3{
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);;
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes reveal{
+  0% {
+      width: 0px;
+      height: 0px;
+  }
+  30% {
+      width: 600px;
+      height: 150px;
+  }
+  60% {
+      width: 600px;
+      height: 250px;
+  }
+  80% {
+      width: 600px;
+      height: 300px;
+  }
+  100% {
+      width: 600px;
+      height: 350px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+
+
+.about-img img{
+  width: 100%;
+  border-radius: 5px;
+}
+.about-text h4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+  color:blue;
+
+}
+.about-text p{
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom:4rem;
+  text-align: justify;
+}
+.btn1{
+  background-color: #333;
+  width: 120px; 
+  padding: 15px;
+  margin-left: 35%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn1 a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.btn1:hover{
+  background-color: green;
+  a{
+      color: black;
+  }
+}
+
+
+/* 
+Service Section
+*/
+ .icon{
+  /* background-image: linear-gradient(to bottom, green, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-size: 70px;
+  color: red;
+  margin-top: 40px;
+ }
+ .card:hover{
+  background-color: green;
   color: white;
+  .icon{color:yellow;}
+ }
+
+ .btn2{
+  background-color: #333;
+  width: 120px; 
+  padding: 15px;
+  margin-left: 45%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+ .btn2 a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.btn2:hover{
+  background-color: green;
+  a{
+      color: black;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Gallery */
+/* .marquee {
+  height:300px;
+  overflow: hidden;
+  position: relative;
+  background: #fefefe;
+  color: #333;
+  border: 1px solid #4a4a4a;
+} */
+/* .marquee{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll-left 10s linear infinite;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-100%);
   }
-}
+} */
+/* <div className="marquee" style={{display:'flex', flexDirection:'row'}}>
+    
+    <img src="https://media.istockphoto.com/id/589415708/photo/fresh-fruits-and-vegetables.webp?a=1&b=1&s=612x612&w=0&k=20&c=L4JLiFkq1OWXrZv55n8cuqa1L2Vc2vLxnycM8o0tfSg=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/453963935/photo/fruits-and-vegetables-at-city-market-in-riga.webp?a=1&b=1&s=612x612&w=0&k=20&c=_7Ows4GmrOgzrA_VDPLCSmPfNIDaXgC0LjqAJ1u_q2s=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/2153263586/photo/healthy-balanced-food-frame-with-copy-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=CwRGYQDFbHYYW6y4GBxGkTNRLMY_1EjvrKitqWk5WaA=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>  
+    <img src="https://media.istockphoto.com/id/908062538/photo/raw-organic-spring-farmers-market-box.jpg?s=612x612&w=0&k=20&c=F1t0odEDhnPjA9yY8aZ0GzNg3bX__0zalVvuE8yTS9E=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/139497624/photo/crate-full-of-fruits-and-vegetables-over-rustic-table.jpg?s=612x612&w=0&k=20&c=4WYvNbgSZvtpM64dnxCfkZE5p2GGfVWqOPv59qzTCmg=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/1321195683/photo/woman-having-healthy-lunch.jpg?s=612x612&w=0&k=20&c=buB2Jla5pWRfAt_Nu92if0WWprQxe_jMufq91s7Ici8=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/1218693828/photo/wooden-bowl-with-mixed-nuts-on-rustic-table-top-view-healthy-food-and-snack.jpg?s=612x612&w=0&k=20&c=89-ko7nwlcqM6HPvwaQ3tZus4apArtwHkFAB0IxPQpo=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/175544379/photo/snacks.jpg?s=612x612&w=0&k=20&c=Bt9XnMxBL4T2wPK5jkWX5aMu3ddRpdP70ALByybie1A=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+    <img src="https://media.istockphoto.com/id/1306220112/photo/dried-fruits-and-nuts-stall.jpg?s=612x612&w=0&k=20&c=LC50U_UBweCAApKvnLWK1p5sHYhZ1gjNOTvmcoX6cNo=" className="img-fluid col-md-3" alt="..."  style={{marginTop:"10px",height:"300px", width:"33%"}}/>
+  </div> */
