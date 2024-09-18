@@ -1,38 +1,120 @@
-.App {
+/* HOME */
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  overflow: hidden;
+  animation: reveal 2s linear forwards;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box h3{
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);;
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes reveal{
+  0% {
+      width: 0px;
+      height: 0px;
+  }
+  30% {
+      width: 600px;
+      height: 150px;
+  }
+  60% {
+      width: 600px;
+      height: 250px;
+  }
+  80% {
+      width: 600px;
+      height: 300px;
+  }
+  100% {
+      width: 600px;
+      height: 350px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+
+
+.about-img img{
+  width: 100%;
+  border-radius: 5px;
+}
+.about-text h4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+  color:blue;
+
+}
+.about-text p{
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom:4rem;
+  text-align: justify;
+}
+.btn1{
+  background-color: #333;
+  width: 120px; 
+  padding: 15px;
+  margin-left: 35%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn1 a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.btn1:hover{
+  background-color: green;
+  a{
+      color: black;
+  }
+}
+
+
+/* 
+Service Section
+*/
+ .icon{
+  /* background-image: linear-gradient(to bottom, green, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-size: 70px;
+  color: red;
+  margin-top: 40px;
+ }
+ .card:hover{
+  background-color: green;
   color: white;
-}
+  .icon{color:yellow;}
+ }
 
-.App-link {
-  color: #61dafb;
+ .btn2{
+  background-color: #333;
+  width: 120px; 
+  padding: 15px;
+  margin-left: 45%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+ .btn2 a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.btn2:hover{
+  background-color: green;
+  a{
+      color: black;
   }
 }

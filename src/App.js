@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import logo from './logo.svg';
 import './App.css';
 import SignIn from './components/SignIn';
@@ -7,6 +8,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 
+=======
+import './App.css';
+import Home from './components/Home';
+>>>>>>> 71ec946a45c2c47d46662f1b9d734aae320d8714
 
 function App() {
   const  route = createBrowserRouter([
@@ -24,11 +29,17 @@ function App() {
   ]);
 
   return (
+<<<<<<< HEAD
     <div className='App'>
    <RouterProvider router={route}></RouterProvider>
     </div>
 
     
+=======
+    <>
+    <Home/>
+    </>
+>>>>>>> 71ec946a45c2c47d46662f1b9d734aae320d8714
   );
 }
 
