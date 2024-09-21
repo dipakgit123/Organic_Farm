@@ -14,12 +14,16 @@ import './App.css';
 // import Home from './components/Home';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import Services from './components/Services';
 =======
+=======
+>>>>>>> 4ebf5706dcff495a3c628d243f0bf11f5f004fb9
 import About  from './components/About';
 import Community from './components/Community';
 import Services from './components/Services';
 >>>>>>> 4ebf5706dcff495a3c628d243f0bf11f5f004fb9
+
 
 
 function App() {
@@ -40,14 +44,20 @@ function App() {
   return (
     <>
 <<<<<<< HEAD
+<<<<<<< HEAD
     {/* <Services/>
     <Contact/> */}
 =======
+=======
+>>>>>>> 4ebf5706dcff495a3c628d243f0bf11f5f004fb9
     <Home/>
     <Services/>
     <About/>
     <Community/>
     
+<<<<<<< HEAD
+>>>>>>> 4ebf5706dcff495a3c628d243f0bf11f5f004fb9
+=======
 >>>>>>> 4ebf5706dcff495a3c628d243f0bf11f5f004fb9
     
     <div className='App'>
