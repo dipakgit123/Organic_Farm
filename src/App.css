@@ -130,9 +130,6 @@ input, textarea {
 }
 .btn1:hover{
   background-color: green;
-  a{
-      color: black;
-  }
 }
 
 
@@ -168,9 +165,7 @@ Service Section
 }
 .btn2:hover{
   background-color: green;
-  a{
-      color: black;
-  }
+ 
 }
 
 /* Gallery */
@@ -212,3 +207,85 @@ Service Section
     <img src="https://media.istockphoto.com/id/175544379/photo/snacks.jpg?s=612x612&w=0&k=20&c=Bt9XnMxBL4T2wPK5jkWX5aMu3ddRpdP70ALByybie1A=" className="img-fluid col-md-3" alt="..."   style={{marginTop:"10px",height:"300px", width:"33%"}}/>
     <img src="https://media.istockphoto.com/id/1306220112/photo/dried-fruits-and-nuts-stall.jpg?s=612x612&w=0&k=20&c=LC50U_UBweCAApKvnLWK1p5sHYhZ1gjNOTvmcoX6cNo=" className="img-fluid col-md-3" alt="..."  style={{marginTop:"10px",height:"300px", width:"33%"}}/>
   </div> */
+
+  .NavItems{
+    flex-direction: row; 
+    justify-content: center; 
+    width: 100%; 
+  }
+  
+  .btns{
+  height: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-left: 5px;
+  text-align: center;
+   
+  }
+  
+  
+  .container-fluid1{
+    height: auto;
+    width: auto;
+    background-color:#198754;
+    color: white;
+    padding: 10px;
+  }
+  
+  .footer-logo{
+    height: 80px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 100px;
+  }
+  
+  .slogan{
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+   margin-left: 100px;
+  }
+  .links{
+    font-size: 17px;
+    text-align: center;
+    list-style-type: none;
+  }
+  .links li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  
+  }
+  .social{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li a i{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 50%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  @media (max-width: 700px) {
+    .fotter1 {
+      border-bottom: 1px solid gray; /* Adjust the color and width as needed */
+    }
+    .fotter1 img{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+      }
+    }

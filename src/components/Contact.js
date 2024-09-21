@@ -1,8 +1,12 @@
 import React from 'react'
 import '../App.css'
+import Navbar1 from './Navbar'
+import Footer from './Footer'
 
 const Contact = () => {
   return (
+   <>
+ 
     <div className='container col-md-12'>
         <div className="row">
     <div className="col-md-6">
@@ -35,6 +39,8 @@ const Contact = () => {
         </div>
 
 </div>
+
+</>
       
   )
 }
