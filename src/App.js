@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./App.css";
 import Home from "./components/Home";
 import {BrowserRouter,Routes,Route} from "react-router-dom"
@@ -10,9 +10,6 @@ import SignIn from "./components/SignIn"
 import Signup from "./components/Signup";
 import Contact from "./components/Contact";
 import Community from "./components/Community";
-
-
-
 
 
 
@@ -35,6 +32,8 @@ const App = () => {
       </BrowserRouter>
     </div>
   )
-}
+
+   }
+   
 
 export default App
