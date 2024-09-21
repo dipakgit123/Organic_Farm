@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
+import './About.css';
+import './Community.css'
 import SignIn from './components/SignIn';
 import Signup from './components/Signup';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,7 +13,10 @@ import './App.css';
 import Contact from './components/Contact';
 import Home from './components/Home';
 
+import About  from './components/About';
+import Community from './components/Community';
 import Services from './components/Services';
+
 
 function App() {
   const  route = createBrowserRouter([
@@ -30,8 +35,11 @@ function App() {
 
   return (
     <>
+    <Home/>
     <Services/>
-    <Contact/>
+    <About/>
+    <Community/>
+    
     
     <div className='App'>
    <RouterProvider router={route}></RouterProvider>
