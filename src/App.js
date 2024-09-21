@@ -1,47 +1,31 @@
-// import logo from './logo.svg';
-import './App.css';
-import SignIn from './components/SignIn';
-import Signup from './components/Signup';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import "./App.css";
+import Home from "./components/Home";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Navbar1 from "./components/Navbar";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Services from "./components/Services";
+import SignIn from "./components/SignIn"
+import Signup from "./components/Signup";
+import Contact from "./components/Contact";
 
-
-
-
-import './App.css';
-import Contact from './components/Contact';
-import Home from './components/Home';
-
-import Services from './components/Services';
-
-function App() {
-  const  route = createBrowserRouter([
-    {
-      path:"/",
-      element: <Signup/>,
-      
-    },
-
-    {
-      path:'/signin',
-      element: <SignIn/>,
-      
-    },
-  ]);
-
+const App = () => {
   return (
-    <>
-    <Services/>
-    <Contact/>
-    
-    <div className='App'>
-   <RouterProvider router={route}></RouterProvider>
+    <div>
+      <BrowserRouter>
+      <Navbar1/>
+      <Routes>
+        <Route path ="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/services" element={<Services/>}/>
+        <Route path="/signin" element={<SignIn/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
+      <Footer/>
+      </BrowserRouter>
     </div>
-
-    
-    
-    <Contact/>
-    </>
-  );
+  )
 }
 
-export default App;
+export default App
