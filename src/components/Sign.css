@@ -20,11 +20,8 @@
     
   }
 
-  .addUserForm .inputGroup label{
-    margin-top: 10px;
-    padding-right: 100%;
-    
-  }
+  
+  
 
   .addUserForm .inputGroup input{
     margin-top: 5px;
@@ -41,12 +38,19 @@
   .signin{
     margin-top: 10px;
     
+    
   }
 
   
   .signin .btn.btn-primary{
    background-color: green;
+   margin-left: 40%;
     
+  }
+
+  .error-message{
+    color: red;
+    font-size: 14;
   }
  
   

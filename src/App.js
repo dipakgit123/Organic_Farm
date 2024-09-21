@@ -8,10 +8,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 import './App.css';
-import Contact from './components/Contact';
-import Home from './components/Home';
+// import Contact from './components/Contact';
+// import Home from './components/Home';
 
-import Services from './components/Services';
+// import Services from './components/Services';
 
 function App() {
   const  route = createBrowserRouter([
@@ -30,8 +30,8 @@ function App() {
 
   return (
     <>
-    <Services/>
-    <Contact/>
+    {/* <Services/>
+    <Contact/> */}
     
     <div className='App'>
    <RouterProvider router={route}></RouterProvider>
@@ -39,7 +39,7 @@ function App() {
 
     
     
-    <Contact/>
+    {/* <Contact/> */}
     </>
   );
 }
